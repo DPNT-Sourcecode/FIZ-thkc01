@@ -47,7 +47,7 @@ public class FizTest {
 
     @Test
     public void should_return_fizz_buzz_when_number_contains_three_and_five() {
-        assertThat("fizz buzz", equalTo(solution.fizzBuzz(352)));
+        assertThat("fizz buzz", equalTo(solution.fizzBuzz(546)));
     }
 
 }
