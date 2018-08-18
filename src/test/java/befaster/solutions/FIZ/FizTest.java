@@ -52,11 +52,11 @@ public class FizTest {
 
     @Test
     public void should_return_deluxe(){
+        //I think I got a penalty because when I did a gradlew run before having my code finished and when I deployed it didnt use the latest version of my code
         assertThat("deluxe", equalTo(solution.fizzBuzz(11)));
         assertThat("deluxe", equalTo(solution.fizzBuzz(22)));
         assertThat("deluxe", equalTo(solution.fizzBuzz(1111)));
         assertThat("fizz buzz deluxe", equalTo(solution.fizzBuzz(555)));
-
     }
 
 }
