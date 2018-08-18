@@ -50,4 +50,11 @@ public class FizTest {
         assertThat("fizz buzz", equalTo(solution.fizzBuzz(546)));
     }
 
+    @Test
+    public void should_return_deluxe(){
+        assertThat("deluxe", equalTo(solution.fizzBuzz(11)));
+        assertThat("fizz buzz deluxe", equalTo(solution.fizzBuzz(555)));
+
+    }
+
 }
