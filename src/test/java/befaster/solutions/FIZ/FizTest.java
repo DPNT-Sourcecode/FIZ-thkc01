@@ -26,8 +26,8 @@ public class FizTest {
     }
 
     @Test
-    public void number_is_multiple_of_five() {
-        assertThat("buzz", equalTo(solution.fizzBuzz(25)));
+    public void number_is_multiple_of_five_and_is_odd_and_contains_five_should_return_buzz_fake_deluxe() {
+        assertThat("buzz fake deluxe", equalTo(solution.fizzBuzz(25)));
     }
 
     //
@@ -51,17 +51,27 @@ public class FizTest {
         assertThat("fizz buzz", equalTo(solution.fizzBuzz(546)));
     }
 
+//    @Test
+//    public void should_return_deluxe() {
+//        //I think I got a penalty because when I did a gradlew run before having my code finished and when I deployed it didnt use the latest version of my code
+//        assertThat("deluxe", equalTo(solution.fizzBuzz(22)));
+//    }
+
+//    @Test
+//    public void should_return_fake_deluxe_for_odd_deluxe_numbers() {
+//        assertThat("fake deluxe", equalTo(solution.fizzBuzz(11)));
+//        assertThat("fake deluxe", equalTo(solution.fizzBuzz(1111)));
+//        assertThat("fizz buzz fake deluxe", equalTo(solution.fizzBuzz(555)));
+//    }
+
     @Test
-    public void should_return_deluxe() {
-        //I think I got a penalty because when I did a gradlew run before having my code finished and when I deployed it didnt use the latest version of my code
-        assertThat("deluxe", equalTo(solution.fizzBuzz(22)));
+    public void should_return_fizz_deluxe(){
+        assertThat("fizz deluxe", equalTo(solution.fizzBuzz(3)));
     }
 
     @Test
-    public void should_return_fake_deluxe_for_odd_deluxe_numbers() {
-        assertThat("fake deluxe", equalTo(solution.fizzBuzz(11)));
-        assertThat("fake deluxe", equalTo(solution.fizzBuzz(1111)));
-        assertThat("fizz buzz fake deluxe", equalTo(solution.fizzBuzz(555)));
+    public void should_return_buzz_deluxe(){
+        assertThat("buzz deluxe", equalTo(solution.fizzBuzz(5)));
     }
 
 }

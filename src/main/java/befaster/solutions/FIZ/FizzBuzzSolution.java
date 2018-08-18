@@ -40,14 +40,13 @@ public class FizzBuzzSolution {
     }
 
     private boolean isDeluxe(Integer number) {
-        if (number <= 10) return false;
-        String numberString = number.toString();
-        for (char c : numberString.toCharArray()) {
-            if (c != numberString.charAt(0)) {
-                return false;
-            }
+        if (number % 3 == 0 && number.toString().contains("3")) {
+            return true;
         }
-        return true;
+        if (number % 5 == 0 && number.toString().contains("5")) {
+            return true;
+        }
+        return false;
     }
 
     private boolean isFakeDeluxe(Integer number) {
