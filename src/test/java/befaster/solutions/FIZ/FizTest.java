@@ -59,9 +59,9 @@ public class FizTest {
 
     @Test
     public void should_return_fake_deluxe_for_odd_deluxe_numbers() {
-//        assertThat("fake deluxe", equalTo(solution.fizzBuzz(11)));
-//        assertThat("fake deluxe", equalTo(solution.fizzBuzz(1111)));
-        assertThat("fizz buzz deluxe", equalTo(solution.fizzBuzz(555)));
+        assertThat("fake deluxe", equalTo(solution.fizzBuzz(11)));
+        assertThat("fake deluxe", equalTo(solution.fizzBuzz(1111)));
+        assertThat("fizz buzz fake deluxe", equalTo(solution.fizzBuzz(555)));
     }
 
 }
