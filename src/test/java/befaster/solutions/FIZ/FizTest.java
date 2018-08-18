@@ -29,7 +29,8 @@ public class FizTest {
     public void number_is_multiple_of_five() {
         assertThat("buzz", equalTo(solution.fizzBuzz(25)));
     }
-//
+
+    //
     @Test
     public void number_is_not_multiple_of_five_or_three_should_return_the_number() {
         assertThat("1", equalTo(solution.fizzBuzz(1)));
@@ -51,16 +52,16 @@ public class FizTest {
     }
 
     @Test
-    public void should_return_deluxe(){
+    public void should_return_deluxe() {
         //I think I got a penalty because when I did a gradlew run before having my code finished and when I deployed it didnt use the latest version of my code
-        assertThat("deluxe", equalTo(solution.fizzBuzz(11)));
-        assertThat("deluxe", equalTo(solution.fizzBuzz(1111)));
-        assertThat("fizz buzz deluxe", equalTo(solution.fizzBuzz(555)));
+        assertThat("deluxe", equalTo(solution.fizzBuzz(22)));
     }
 
     @Test
-    public void should_return_fake_deluxe_for_odd_deluxe_numbers(){
-        assertThat("fake deluxe", equalTo(solution.fizzBuzz(22)));
+    public void should_return_fake_deluxe_for_odd_deluxe_numbers() {
+        assertThat("fake deluxe", equalTo(solution.fizzBuzz(11)));
+        assertThat("fake deluxe", equalTo(solution.fizzBuzz(1111)));
+        assertThat("fizz buzz deluxe", equalTo(solution.fizzBuzz(555)));
     }
 
 }
