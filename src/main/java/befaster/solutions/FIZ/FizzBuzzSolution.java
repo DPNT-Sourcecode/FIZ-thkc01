@@ -21,7 +21,13 @@ public class FizzBuzzSolution {
             if (!output.isEmpty()) {
                 output = output.concat(" ");
             }
+
+            if (isFakeDeluxe(number)) {
+                output = output.concat("fake ");
+            }
+
             output = output.concat("deluxe");
+
         }
 
         if (output.isEmpty()) {
@@ -42,6 +48,10 @@ public class FizzBuzzSolution {
             }
         }
         return true;
+    }
+
+    private boolean isFakeDeluxe(Integer number) {
+        return number % 2 == 0;
     }
 
 }
