@@ -34,6 +34,9 @@ public class FizTest {
     @Test
     public void number_is_not_multiple_of_five_or_three_should_return_the_number() {
         assertThat("1", equalTo(solution.fizzBuzz(1)));
+        assertThat("11", equalTo(solution.fizzBuzz(11)));
+        assertThat("1111", equalTo(solution.fizzBuzz(1111)));
+
     }
 
     @Test
@@ -57,21 +60,15 @@ public class FizTest {
 //        assertThat("deluxe", equalTo(solution.fizzBuzz(22)));
 //    }
 
-//    @Test
-//    public void should_return_fake_deluxe_for_odd_deluxe_numbers() {
-//        assertThat("fake deluxe", equalTo(solution.fizzBuzz(11)));
-//        assertThat("fake deluxe", equalTo(solution.fizzBuzz(1111)));
-//        assertThat("fizz buzz fake deluxe", equalTo(solution.fizzBuzz(555)));
-//    }
-
     @Test
-    public void should_return_fizz_deluxe(){
-        assertThat("fizz deluxe", equalTo(solution.fizzBuzz(3)));
+    public void should_return_fizz_deluxe() {
+        assertThat("fizz fake deluxe", equalTo(solution.fizzBuzz(3)));
     }
 
     @Test
-    public void should_return_buzz_deluxe(){
-        assertThat("buzz deluxe", equalTo(solution.fizzBuzz(5)));
+    public void should_return_buzz_deluxe() {
+        assertThat("buzz fake deluxe", equalTo(solution.fizzBuzz(5)));
+        assertThat("buzz fake deluxe", equalTo(solution.fizzBuzz(555)));
     }
 
 }
