@@ -16,8 +16,8 @@ public class FizTest {
     }
 
     @Test
-    public void number_is_multiple_of_three_and_five() {
-        assertThat("fizz buzz", equalTo(solution.fizzBuzz(15)));
+    public void number_is_multiple_of_three_and_five_is_odd_and_has_a_five() {
+        assertThat("fizz buzz fake deluxe", equalTo(solution.fizzBuzz(15)));
     }
 
     @Test
