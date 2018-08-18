@@ -1,4 +1,4 @@
 package befaster.solutions.HLO;
 
-public class FriendNameCantBeNullException {
+public class FriendNameCantBeNullException extends RuntimeException {
 }

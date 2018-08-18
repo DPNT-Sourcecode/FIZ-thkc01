@@ -19,4 +19,8 @@ public class HelloWorldTest {
         assertThat(helloSolution.hello("test"), equalTo("Hello, test!"));
     }
 
+    @Test(expected = FriendNameCantBeNullException.class)
+    public void should_fail_when_friend_name_is_null() {
+        helloSolution.hello(null);
+    }
 }
