@@ -53,6 +53,8 @@ public class FizTest {
     @Test
     public void should_return_deluxe(){
         assertThat("deluxe", equalTo(solution.fizzBuzz(11)));
+        assertThat("deluxe", equalTo(solution.fizzBuzz(22)));
+        assertThat("deluxe", equalTo(solution.fizzBuzz(1111)));
         assertThat("fizz buzz deluxe", equalTo(solution.fizzBuzz(555)));
 
     }
