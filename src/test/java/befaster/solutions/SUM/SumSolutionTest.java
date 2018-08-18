@@ -1,5 +1,6 @@
 package befaster.solutions.SUM;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,5 +19,10 @@ public class SumSolutionTest {
     @Test
     public void compute_sum() {
         assertThat(sum.compute(1, 1), equalTo(2));
+    }
+
+    @Test
+    public void param_is_lower_than_zero_should_fail(){
+        assertThat(sum.compute(-5,10), );
     }
 }
