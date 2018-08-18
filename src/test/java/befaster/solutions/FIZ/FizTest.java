@@ -27,6 +27,13 @@ public class FizTest {
     }
 
     @Test
+    public void number_is_multiple_of_three_and_is_odd_and_contains_three(){
+        assertThat("fizz deluxe", equalTo(solution.fizzBuzz(36)));
+        assertThat("fizz deluxe", equalTo(solution.fizzBuzz(396)));
+        assertThat("fizz deluxe", equalTo(solution.fizzBuzz(936)));
+    }
+
+    @Test
     public void number_is_multiple_of_five_and_is_odd_and_contains_five_should_return_buzz_fake_deluxe() {
         assertThat("buzz fake deluxe", equalTo(solution.fizzBuzz(25)));
     }
@@ -59,6 +66,7 @@ public class FizTest {
     @Test
     public void should_return_fizz_deluxe() {
         assertThat("fizz fake deluxe", equalTo(solution.fizzBuzz(3)));
+
     }
 
     @Test
