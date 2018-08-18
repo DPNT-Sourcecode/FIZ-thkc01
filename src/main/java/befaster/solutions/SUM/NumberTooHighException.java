@@ -1,4 +1,4 @@
 package befaster.solutions.SUM;
 
-public class NumberTooHighException {
+public class NumberTooHighException extends RuntimeException {
 }
