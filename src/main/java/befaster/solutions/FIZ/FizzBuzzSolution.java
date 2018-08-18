@@ -51,7 +51,7 @@ public class FizzBuzzSolution {
     }
 
     private boolean isFakeDeluxe(Integer number) {
-        return number % 3 == 0;
+        return number % 2 != 0;
     }
 
 }
