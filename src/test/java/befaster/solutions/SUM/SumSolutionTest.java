@@ -29,5 +29,5 @@ public class SumSolutionTest {
     public void param_is_higher_than_100_should_fail(){
         sum.compute(5,101);
     }
-    
+
 }
