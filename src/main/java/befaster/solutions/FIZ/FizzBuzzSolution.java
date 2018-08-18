@@ -17,16 +17,12 @@ public class FizzBuzzSolution {
             output = output.concat("buzz");
         }
 
-        if (isDeluxe(number)) {
+        if (isFakeDeluxe(number)) {
             if (!output.isEmpty()) {
                 output = output.concat(" ");
             }
 
-            if (isFakeDeluxe(number)) {
-                output = output.concat("fake ");
-            }
-
-            output = output.concat("deluxe");
+            output = output.concat("fake deluxe");
 
         }
 
@@ -39,7 +35,7 @@ public class FizzBuzzSolution {
 
     }
 
-    private boolean isDeluxe(Integer number) {
+    private boolean isFakeDeluxe(Integer number) {
         if (number % 3 == 0 && number.toString().contains("3")) {
             return true;
         }
@@ -47,10 +43,6 @@ public class FizzBuzzSolution {
             return true;
         }
         return false;
-    }
-
-    private boolean isFakeDeluxe(Integer number) {
-        return true;
     }
 
 }
